@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#2f2f30;
+}
+section{
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'sans-serif';
+    color: #f1f1f1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1 , .header h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(181deg, #c196fa 22.6%, #8e4ae8 48.45%, #873de8 77.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 1.2px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 53px;
+}
+.date {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.date p {
+    background: linear-gradient(168deg, #c196fa 22.6%, #8e4ae8 48.45%, #873de8 77.48%,#c196fa 90.6%);
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    text-align: center;
+}
+.preguntas, .respuestas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preguntas h3, .respuestas h3{
+    background: linear-gradient(181deg, #c196fa 22.6%, #8e4ae8 48.45%, #873de8 77.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: solid 2px  #873de8;
+    line-height: 1.5;
+}
+.preguntas li{
+    text-align: center;
+    list-style: none;
+}
+.respuestas li{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 6px;
+    list-style: decimal;
+    flex-direction: column;
+    text-align: center;
+}
+.respuestas li:hover{
+    border: solid 1px  #873de8;
+    padding: 5px;
+}
+.respuestas li p{
+    width: 90%;
+    padding-top: 15px;
+}
+.boton-padre{
+    margin: 17px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.bien , .mal{
+    background: transparent;
+    margin: 5px;
+    border: 0px solid transparent;
+}
+i{
+    color:#f1f1f1;
+}
+li{
+    padding:10px;
+}
+.active{ 
+    background: linear-gradient(181deg, #c196fa 22.6%, #8e4ae8 48.45%, #873de8 77.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;;
+}
+.respuestas h1{
+    margin: 20px;
+}
+.task-container{
+    width: 80%;
+    max-width: 1200px;
+    padding-bottom: 40px;
+}
+.task{
+    display: flex !important;
+    width: 50% !important;
+    flex-direction: row !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    padding: 15px !important;
+}
+.task .task-remove-button{
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+.task .task-remove-button i{
+    color: #873de8;
+}
+.task .task-remove-button:hover{
+    background:#873de8;
+    transition: ease-in 0.5s;
+}
+.task .task-remove-button:hover >i{
+    color: #2f2f30;
+    transition: ease-in 0.5s;
+}
+input.add-task-name[type="text"] {
+    appearance: none; /* Para navegadores basados en Blink y otros */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    -moz-appearance: textfield; /* Para navegadores basados en Gecko */
+    outline: none;
+    color: #873de8;
+    border: 2px solid #873de8;
+    border-radius: 15px;
+    padding: 9px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    text-align: center;
+  }
+
+button.add-task-button{
+    background: #873de8;
+    padding:12px;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+}
+footer{
+    background: #2f2f30;
+    border-top: 2px solid #873de8;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #873de8;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
